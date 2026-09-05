@@ -12,7 +12,7 @@ from PIL import Image
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-DATA_DIR = PROJECT_ROOT / "data" / "raw" / "sentinel-2"
+DATA_DIR = PROJECT_ROOT / "data" / "raw" / "test_patches"/ "patch_01_forest"
 
 SR_PATH = (
     PROJECT_ROOT

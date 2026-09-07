@@ -13,13 +13,13 @@ from opensr_model import SRLatentDiffusion
 # Patch configuration
 # ---------------------------------------------------------
 
-PATCH_ID = "patch_03"
+PATCH_ID = "patch_05"
 
 REPO = Path(__file__).resolve().parents[2]
 
 PATCH_DIR = (
     REPO
-    / "data/raw/test_patches/patch_03_agriculture/patch"
+    / "data/raw/test_patches/patch_05_dense_urban/patch"
 )
 
 CHECKPOINT = (

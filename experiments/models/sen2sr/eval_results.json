@@ -1,0 +1,218 @@
+{
+  "eval_type": "super_resolution",
+  "model_name": "SEN2SR",
+  "variants": {
+    "main": {
+      "note": "SEN2SRLite RGBN 4x (CNN)",
+      "in_channels": 4,
+      "scale": 4
+    },
+    "lite-main": {
+      "note": "SEN2SRLite full 10-band 4x (CNN)",
+      "in_channels": 10,
+      "scale": 4
+    },
+    "mamba-rgbn-x4": {
+      "note": "SEN2SR RGBN 4x (Mamba)",
+      "in_channels": 4,
+      "scale": 4
+    },
+    "mamba-main": {
+      "note": "SEN2SR full 10-band 4x (Mamba+Swin)",
+      "in_channels": 10,
+      "scale": 4
+    }
+  },
+  "per_dataset": {
+    "naip": {
+      "main": {
+        "reflectance": 0.001016166420266663,
+        "spectral": 0.4714231945333942,
+        "spatial": 0.0,
+        "synthesis": 0.07252947992134479,
+        "hallucination": 0.0560758403472362,
+        "omission": 0.06958310396200226,
+        "improvement": 0.8743410716133733
+      },
+      "lite-main": {
+        "reflectance": 0.0023929650121698935,
+        "spectral": 1.804798807828657,
+        "spatial": 0.0,
+        "synthesis": 0.07252874315506028,
+        "hallucination": 0.05607550320846419,
+        "omission": 0.06904069081910195,
+        "improvement": 0.8748838036291061
+      },
+      "mamba-rgbn-x4": {
+        "reflectance": 0.001255020108674803,
+        "spectral": 0.674253087851309,
+        "spatial": 0.0009677419138531531,
+        "synthesis": 0.07252634112392703,
+        "hallucination": 0.0565088601602662,
+        "omission": 0.07080371125090507,
+        "improvement": 0.8726874195760296
+      },
+      "mamba-main": {
+        "reflectance": 0.0022339470921114326,
+        "spectral": 1.703185756360331,
+        "spatial": 0.000645161275902102,
+        "synthesis": 0.07253190820976611,
+        "hallucination": 0.05550697596082764,
+        "omission": 0.0696916452218448,
+        "improvement": 0.874801383864495
+      }
+    },
+    "spot": {
+      "main": {
+        "reflectance": 0.0019762718778414032,
+        "spectral": 0.6286176443099976,
+        "spatial": 0.0,
+        "synthesis": 0.07645224697060055,
+        "hallucination": 0.07341786267028914,
+        "omission": 0.12738969715105164,
+        "improvement": 0.7991924583911896
+      },
+      "lite-main": {
+        "reflectance": 0.003689945882393254,
+        "spectral": 1.5121355056762695,
+        "spatial": 0.0,
+        "synthesis": 0.07637888938188553,
+        "hallucination": 0.07357814742459191,
+        "omission": 0.1317059677094221,
+        "improvement": 0.7947158780362871
+      },
+      "mamba-rgbn-x4": {
+        "reflectance": 0.0021661585778929293,
+        "spectral": 0.7280389053954018,
+        "spatial": 0.0,
+        "synthesis": 0.07640890404582024,
+        "hallucination": 0.07477001659572124,
+        "omission": 0.1313268399486939,
+        "improvement": 0.7939031256569756
+      },
+      "mamba-main": {
+        "reflectance": 0.003966439825793107,
+        "spectral": 2.0437338981363506,
+        "spatial": 0.0,
+        "synthesis": 0.07643955449263255,
+        "hallucination": 0.07364815721909206,
+        "omission": 0.1296975024872356,
+        "improvement": 0.7966543204254575
+      }
+    },
+    "spain_crops": {
+      "main": {
+        "reflectance": 0.0011882550731700445,
+        "spectral": 0.5469950283212321,
+        "spatial": 0.0,
+        "synthesis": 0.077598962799779,
+        "hallucination": 0.07354845825050559,
+        "omission": 0.08589955272951297,
+        "improvement": 0.8405519872903824
+      },
+      "lite-main": {
+        "reflectance": 0.0026417697538688245,
+        "spectral": 1.8849001335246223,
+        "spatial": 0.0,
+        "synthesis": 0.07759636347847325,
+        "hallucination": 0.07414230997008937,
+        "omission": 0.08715103340468236,
+        "improvement": 0.8387066466467721
+      },
+      "mamba-rgbn-x4": {
+        "reflectance": 0.001475947185619069,
+        "spectral": 0.803401131182909,
+        "spatial": 0.0021428570949605535,
+        "synthesis": 0.07759423327765294,
+        "hallucination": 0.0744503526283162,
+        "omission": 0.08846777996846608,
+        "improvement": 0.8370818815061024
+      },
+      "mamba-main": {
+        "reflectance": 0.0026570606652447687,
+        "spectral": 1.8714848480054311,
+        "spatial": 0.0,
+        "synthesis": 0.07760132330336741,
+        "hallucination": 0.07383268166865621,
+        "omission": 0.08725390742932047,
+        "improvement": 0.8389134045158114
+      }
+    },
+    "spain_urban": {
+      "main": {
+        "reflectance": 0.0021667736960807814,
+        "spectral": 0.8991339713335037,
+        "spatial": 0.0,
+        "synthesis": 0.06583081781864167,
+        "hallucination": 0.11562187746167182,
+        "omission": 0.18901528269052506,
+        "improvement": 0.6953628465533257
+      },
+      "lite-main": {
+        "reflectance": 0.004511551716132089,
+        "spectral": 2.823348546028137,
+        "spatial": 0.0,
+        "synthesis": 0.06582423765212297,
+        "hallucination": 0.11515809502452612,
+        "omission": 0.18995906542986632,
+        "improvement": 0.6948828414082527
+      },
+      "mamba-rgbn-x4": {
+        "reflectance": 0.0025140972109511496,
+        "spectral": 1.1842669248580933,
+        "spatial": 0.0009999999776482583,
+        "synthesis": 0.06583918519318104,
+        "hallucination": 0.11817860100418329,
+        "omission": 0.19565520733594893,
+        "improvement": 0.6861661776900292
+      },
+      "mamba-main": {
+        "reflectance": 0.004436286317650228,
+        "spectral": 2.9282625019550323,
+        "spatial": 0.0,
+        "synthesis": 0.06593625470995904,
+        "hallucination": 0.11668088678270579,
+        "omission": 0.1886385429650545,
+        "improvement": 0.694680567085743
+      }
+    }
+  },
+  "aggregate": {
+    "main": {
+      "reflectance": 0.001586866766839723,
+      "spectral": 0.6365424596245319,
+      "spatial": 0.0,
+      "synthesis": 0.07310287687759151,
+      "hallucination": 0.07966600968242568,
+      "omission": 0.11797190913327299,
+      "improvement": 0.8023620909620677
+    },
+    "lite-main": {
+      "reflectance": 0.003309058091141016,
+      "spectral": 2.0062957482644217,
+      "spatial": 0.0,
+      "synthesis": 0.0730820584168855,
+      "hallucination": 0.0797385139069179,
+      "omission": 0.11946418934076819,
+      "improvement": 0.8007972924301044
+    },
+    "mamba-rgbn-x4": {
+      "reflectance": 0.0018528057707844878,
+      "spectral": 0.8474900123219282,
+      "spatial": 0.0010276497466154913,
+      "synthesis": 0.07309216591014531,
+      "hallucination": 0.08097695759712173,
+      "omission": 0.1215633846260035,
+      "improvement": 0.7974596511072842
+    },
+    "mamba-main": {
+      "reflectance": 0.003323433475199884,
+      "spectral": 2.1366667511142863,
+      "spatial": 0.0001612903189755255,
+      "synthesis": 0.07312726017893129,
+      "hallucination": 0.07991717540782042,
+      "omission": 0.11882039952586385,
+      "improvement": 0.8012624189728768
+    }
+  }
+}

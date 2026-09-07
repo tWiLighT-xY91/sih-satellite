@@ -1,0 +1,11 @@
+numpy==2.5.2
+rasterio==1.5.1
+matplotlib==3.11.1
+omegaconf==2.3.1
+opensr-model==1.1.1
+opensr-utils==2.0.0
+sen2sr==0.8.5
+safetensors==0.8.0
+huggingface_hub==1.30.0
+jupyter==1.1.1
+ipykernel==7.3.0

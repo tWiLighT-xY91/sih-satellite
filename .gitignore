@@ -151,6 +151,7 @@ activemq-data/
 .env
 .envrc
 .venv
+.venv/
 env/
 venv/
 ENV/
@@ -217,3 +218,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Raw satellite data
+data/raw/
+
+# Generated outputs
+data/outputs/
+
+# Large model checkpoints
+*.ckpt
+*.pth
+*.pt
+
+# Experiment artifacts
+*.tif
+*.jp2

@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./experiments/models/sen2sr"
+    ]
+}

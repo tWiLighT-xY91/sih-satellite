@@ -241,3 +241,6 @@ data/outputs/
 # Experiment artifacts
 *.tif
 *.jp2
+
+checkpoints/
+cuda-keyring_1.1-1_all.deb
